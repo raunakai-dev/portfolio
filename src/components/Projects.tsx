@@ -17,6 +17,19 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'RentEase',
+    emoji: '🏠',
+    accentColor: '#f59e0b',
+    glowColor: 'rgba(245,158,11,0.13)',
+    description:
+      'Full-stack Indian rental platform for PGs, rooms, studios & flats. Features role-based JWT auth, Cloudinary photo uploads, OpenStreetMap listings, tenant-landlord messaging, admin panel, and advanced city/rent/type filters — live on Vercel & Render.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Cloudinary', 'Tailwind CSS'],
+    live: 'https://rentease-azure.vercel.app',
+    github: 'https://github.com/raunak-cybersec/Rentease',
+    featured: true,
+    year: '2025',
+  },
+  {
     title: 'FinFlow',
     emoji: '💰',
     accentColor: '#818cf8',
