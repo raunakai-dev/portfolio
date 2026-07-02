@@ -9,6 +9,9 @@ const socials = [
   { icon: Github, label: 'GitHub', value: 'github.com/raunak-cybersec', href: 'https://github.com/raunak-cybersec', color: '#A78BFA', description: 'Check out my work' },
 ]
 
+// ✅ Get your free key at https://web3forms.com → enter raunak96963@gmail.com
+const WEB3FORMS_KEY = '0d3b8110-85bd-491a-b45c-d06d08ed5f15'
+
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
 export default function Contact() {
@@ -25,12 +28,20 @@ export default function Contact() {
     e.preventDefault()
     setStatus('sending')
     try {
-      const res = await fetch('https://formspree.io/f/xpwrwkba', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(fields),
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          subject: `Portfolio Contact from ${fields.name}`,
+          from_name: fields.name,
+          email: fields.email,
+          message: fields.message,
+          botcheck: '',
+        }),
       })
-      if (res.ok) {
+      const data = await res.json()
+      if (data.success) {
         setStatus('success')
         setFields({ name: '', email: '', message: '' })
         setTimeout(() => setStatus('idle'), 6000)
@@ -43,6 +54,7 @@ export default function Contact() {
       setTimeout(() => setStatus('idle'), 4000)
     }
   }
+
 
   return (
     <section id="contact" ref={ref} className="relative py-32 px-6 overflow-hidden">
