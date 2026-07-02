@@ -41,10 +41,36 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'nav-blur py-3' : 'py-5'}`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
-        <a href="#" className="font-bold text-xl" style={{ fontFamily: 'Syne, sans-serif' }}>
-          <span className="gradient-text-pv">RR</span>
-          <span style={{ color: 'var(--text-faint)' }}>.</span>
+        {/* Logo — circular profile photo */}
+        <a href="#" className="flex items-center gap-2.5 group">
+          <div className="relative">
+            {/* Gradient ring */}
+            <div
+              className="w-10 h-10 rounded-full p-[2px] transition-all duration-300 group-hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, var(--pink), var(--violet), var(--green))',
+                boxShadow: '0 0 12px var(--shadow-glow)',
+              }}
+            >
+              <img
+                src="/photo.jpg"
+                alt="Raunak Rai"
+                className="w-full h-full rounded-full object-cover object-top"
+              />
+            </div>
+            {/* Online dot */}
+            <span
+              className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full border-2"
+              style={{
+                background: 'var(--green)',
+                borderColor: 'var(--bg)',
+                boxShadow: '0 0 6px var(--green)',
+              }}
+            />
+          </div>
+          <span className="font-bold text-base hidden sm:block" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text-primary)' }}>
+            Raunak <span className="gradient-text-pv">Rai</span>
+          </span>
         </a>
 
         {/* Desktop Links */}
