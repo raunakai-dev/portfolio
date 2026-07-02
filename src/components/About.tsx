@@ -75,24 +75,21 @@ export default function About() {
                 <div className="w-full h-full rounded-[26px]" style={{ background: 'var(--bg)' }} />
               </div>
 
-              {/* Inner Content */}
-              <div
-                className="absolute inset-[2px] rounded-[26px] overflow-hidden flex items-center justify-center"
-                style={{
-                  background: 'linear-gradient(160deg, rgba(255,45,120,0.08) 0%, rgba(124,58,237,0.06) 100%)',
-                }}
-              >
-                <div className="text-center px-6 select-none">
-                  <div className="text-7xl mb-5 filter drop-shadow-lg">🧑‍💻</div>
-                  <div className="text-[10.5px] font-mono leading-relaxed text-left inline-block">
-                    <p><span style={{ color: 'var(--green)' }}>const</span> <span style={{ color: 'var(--text-primary)' }}>dev</span> <span style={{ color: 'var(--text-muted)' }}>=</span> {'{'}</p>
-                    <p className="ml-4"><span style={{ color: 'var(--pink)' }}>name</span><span style={{ color: 'var(--text-muted)' }}>:</span> <span style={{ color: 'var(--green)' }}>"Raunak Rai"</span>,</p>
-                    <p className="ml-4"><span style={{ color: 'var(--pink)' }}>stack</span><span style={{ color: 'var(--text-muted)' }}>:</span> <span style={{ color: 'var(--green)' }}>"MERN + AI"</span>,</p>
-                    <p className="ml-4"><span style={{ color: 'var(--pink)' }}>intern</span><span style={{ color: 'var(--text-muted)' }}>:</span> <span style={{ color: '#FFD700' }}>true</span>,</p>
-                    <p className="ml-4"><span style={{ color: 'var(--pink)' }}>open</span><span style={{ color: 'var(--text-muted)' }}>:</span> <span style={{ color: 'var(--green)' }}>true</span></p>
-                    <p style={{ color: 'var(--text-muted)' }}>{'}'}</p>
-                  </div>
-                </div>
+              {/* Inner Content — Real profile photo */}
+              <div className="absolute inset-[2px] rounded-[26px] overflow-hidden">
+                <img
+                  src="/photo.jpg"
+                  alt="Raunak Rai"
+                  className="w-full h-full object-cover object-top"
+                  style={{ filter: 'brightness(1.02) contrast(1.02)' }}
+                />
+                {/* Subtle gradient overlay at bottom for depth */}
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-20"
+                  style={{
+                    background: 'linear-gradient(to top, rgba(10,10,15,0.45), transparent)',
+                  }}
+                />
               </div>
 
               {/* Floating badge — bottom */}
