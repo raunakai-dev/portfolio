@@ -229,7 +229,7 @@ export default function Hero() {
             className="text-base sm:text-lg leading-relaxed mb-10 max-w-md"
             style={{ color: 'var(--text-secondary)' }}
           >
-            2nd Year CSE @ SRM University AP — building full-stack AI-powered products, certified MongoDB developer, currently interning at CCC Digital India.
+            3rd Year CSE @ SRM University AP — building full-stack AI-powered products, certified MongoDB developer, interned at CCC Digital India.
           </motion.p>
 
           {/* CTAs */}

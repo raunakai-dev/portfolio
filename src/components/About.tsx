@@ -11,7 +11,7 @@ const stats = [
 ]
 
 const facts = [
-  { icon: GraduationCap, text: '2nd Year B.Tech CSE @ SRM University AP', color: 'var(--pink)' },
+  { icon: GraduationCap, text: '3rd Year B.Tech CSE @ SRM University AP', color: 'var(--pink)' },
   { icon: MapPin, text: 'Andhra Pradesh, India', color: 'var(--violet)' },
   { icon: Cpu, text: 'AI/ML Research Intern — NLP & LLMs', color: 'var(--green)' },
   { icon: Zap, text: 'MongoDB Associate Developer Certified', color: '#FFD700' },
@@ -128,7 +128,7 @@ export default function About() {
             </h2>
 
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: 'var(--text-secondary)' }}>
-              I'm Raunak Rai — a 2nd Year CSE student at SRM University AP, obsessed with building full-stack web applications and AI-powered systems that are fast, functional, and impactful.
+              I'm Raunak Rai — a 3rd Year CSE student at SRM University AP, obsessed with building full-stack web applications and AI-powered systems that are fast, functional, and impactful.
             </p>
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: 'var(--text-secondary)' }}>
               Currently interning as a <strong style={{ color: 'var(--pink)' }}>Product Engineering Intern (AI)</strong> at CCC Digital India, where I'm building AI-driven placement recommendation systems using LLMs and NLP. Also working as a <strong style={{ color: 'var(--violet)' }}>Research Intern</strong> at SRM University AP, doing NLP text summarization with GPT and Transformers.

@@ -83,7 +83,7 @@ export default function Education() {
             </div>
             <div className="flex items-center gap-2" style={{ color: 'var(--text-muted)' }}>
               <Calendar size={14} style={{ color: 'var(--violet)' }} />
-              <span className="text-sm">2nd Year (Currently Enrolled)</span>
+              <span className="text-sm">3rd Year (Currently Enrolled)</span>
             </div>
             <div className="flex items-center gap-2" style={{ color: 'var(--text-muted)' }}>
               <BookOpen size={14} style={{ color: 'var(--violet)' }} />
