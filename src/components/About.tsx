@@ -98,7 +98,7 @@ export default function About() {
                 style={{ border: '1px solid rgba(0,255,135,0.2)' }}
               >
                 <span className="ping-dot w-2.5 h-2.5 rounded-full inline-block" style={{ background: 'var(--green)' }} />
-                <span className="text-xs font-semibold" style={{ color: 'var(--green)' }}>Open to Internships</span>
+                <span className="text-xs font-semibold" style={{ color: 'var(--green)' }}>Open to Full-time Roles</span>
               </motion.div>
 
               {/* Floating badge — top */}
@@ -131,7 +131,7 @@ export default function About() {
               I'm Raunak Rai — a 3rd Year CSE student at SRM University AP, obsessed with building full-stack web applications and AI-powered systems that are fast, functional, and impactful.
             </p>
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: 'var(--text-secondary)' }}>
-              Currently interning as a <strong style={{ color: 'var(--pink)' }}>Product Engineering Intern (AI)</strong> at CCC Digital India, where I'm building AI-driven placement recommendation systems using LLMs and NLP. Also working as a <strong style={{ color: 'var(--violet)' }}>Research Intern</strong> at SRM University AP, doing NLP text summarization with GPT and Transformers.
+              Previously interned as a <strong style={{ color: 'var(--pink)' }}>Product Engineering Intern (AI)</strong> at CCC Digital India, where I built AI-driven placement recommendation systems using LLMs and NLP. Also worked as a <strong style={{ color: 'var(--violet)' }}>Research Intern</strong> at SRM University AP, doing NLP text summarization with GPT and Transformers.
             </p>
             <p className="text-[15px] leading-[1.85] mb-8" style={{ color: 'var(--text-secondary)' }}>
               I'm a <strong style={{ color: '#FFD700' }}>MongoDB Associate Developer</strong> certified developer. I ship real products — not just tutorials.

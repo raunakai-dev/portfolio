@@ -190,7 +190,7 @@ export default function Hero() {
           >
             <span className="ping-dot w-2 h-2 rounded-full inline-block" style={{ background: 'var(--green)' }} />
             <span className="text-xs font-semibold" style={{ color: 'var(--green)' }}>
-              Open to Internship Opportunities
+              Open to Full-time Opportunities
             </span>
           </motion.div>
 

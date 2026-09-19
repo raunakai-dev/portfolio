@@ -132,7 +132,7 @@ export default function Contact() {
             >
               <span className="ping-dot w-2.5 h-2.5 rounded-full inline-block shrink-0" style={{ background: 'var(--green)' }} />
               <p className="text-xs font-medium" style={{ color: 'rgba(0, 255, 135, 0.85)' }}>
-                Available for internship / freelance — <span style={{ color: 'var(--green)' }}>Let's connect</span>
+                Available for full-time roles & freelance — <span style={{ color: 'var(--green)' }}>Let's connect</span>
               </p>
             </motion.div>
           </motion.div>
